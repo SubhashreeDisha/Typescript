@@ -1,3 +1,4 @@
+"use strict";
 const fullName = 'Subhashree';
 const age = 23;
 const isGraduated = true;
