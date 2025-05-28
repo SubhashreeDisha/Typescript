@@ -80,13 +80,13 @@ class SavingAccount extends BankAccount {
         console.log(`An interest of ₹${interest.toFixed(2)} has been successfully added to your account.`);
     }
 }
-const acc = new SavingAccount(101, "Disha", 550000, 4);
+const acc = new SavingAccount(101, "Disha", 55000, 4);
 const rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout,
 });
 function Display() {
-    console.log("--- Banking Menu ---");
+    console.log("----------------- Banking Menu ----------------");
     console.log("1. Deposit");
     console.log("2. Withdraw");
     console.log("3. Check Balance");

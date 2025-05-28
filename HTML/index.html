@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Company Employee Management</title>
+    <link rel="stylesheet" href="../Css/index.css" />
+  </head>
+  <body>
+    <!-- Component 1: Company Management -->
+    <div id="component1" class="component">
+      <h2>Company Management</h2>
+      <input type="text" id="companyName" placeholder="Enter company name" />
+      <button id="addCompany">Add</button>
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Company Name</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="companyTable"></tbody>
+      </table>
+    </div>
+
+    <!-- Component 2: Add Employee -->
+    <div id="component2" class="component hidden">
+      <button id="backToComp1">Back</button>
+      <h2>Add Employee</h2>
+      <form id="employeeForm">
+        <input type="text" placeholder="Name" id="ename" required /><br />
+       <input type="number" placeholder="Age" id="eage" min="18" max="100" required /><br />
+        <input type="email" placeholder="Email" id="eemail" required /><br />
+        <select multiple required id="erole">
+          <option value="Admin">Admin</option>
+          <option value="Manager">Manager</option>
+          <option value="Developer">Developer</option>
+          <option value="Intern">Intern</option></select
+        ><br />
+        <input
+          type="text"
+          placeholder="Department"
+          id="edepart"
+          required
+        /><br />
+        <button type="submit" id="addemp">Add Employee</button>
+      </form>
+      <table>
+        <h3>filter</h3>
+        <select id="filter">
+          <option value="all">all</option>
+          <option value="Admin">Admin</option>
+          <option value="Manager">Manager</option>
+          <option value="Developer">Developer</option>
+          <option value="Intern">Intern</option>
+        </select>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Email</th>
+            <th>Role</th>
+            <th>Department</th>
+            <th>Is Active</th>
+            <th>Status</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="employeeTable"></tbody>
+      </table>
+    </div>
+
+    <!-- Component 3: Edit Employee -->
+    <div id="component3" class="component hidden">
+      <button id="back2">Back</button>
+      <h2>Edit Employee</h2>
+      <form id="editEmployeeForm">
+        <input type="number" placeholder="ID" id="did" readonly /><br />
+        <input type="text" placeholder="Name" id="dname" readonly /><br />
+        <input type="number" placeholder="Age" id="dage" readonly /><br />
+        <input type="email" placeholder="Email" id="demail" readonly /><br />
+        <select multiple id="drole">
+          <option value="Admin">Admin</option>
+          <option value="Manager">Manager</option>
+          <option value="Developer">Developer</option>
+          <option value="Intern">Intern</option></select
+        ><br />
+        <input
+          type="text"
+          placeholder="Department"
+          id="ddepart"
+          readonly
+        /><br />
+        <button type="submit">Update Employee</button>
+      </form>
+      <h2 id="status"></h2>
+
+      <button id="statusBtn">deactivate Emp</button>
+    </div>
+
+    <script src="../dist/employeeSystem.js" type="module"></script>
+  </body>
+</html>

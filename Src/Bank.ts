@@ -55,7 +55,7 @@ class SavingAccount extends BankAccount {
   }
 }
 
-const acc = new SavingAccount(101, "Disha", 550000, 4);
+const acc = new SavingAccount(101, "Disha", 55000, 4);
 
 const rl = readline.createInterface({
   input: process.stdin,
@@ -63,14 +63,14 @@ const rl = readline.createInterface({
 });
 
 function Display(): void {
-  console.log("--- Banking Menu ---");
+  console.log("----------------- Banking Menu ----------------");
   console.log("1. Deposit");
   console.log("2. Withdraw");
   console.log("3. Check Balance");
   console.log("4. ApplyInterest");
   console.log("5. Exit");
 
-  rl.question("Choose an option: ", (choice: string) => {
+  rl.question("Choose an option: ", (choice:string) => {
     handleChoice(choice);
   });
 }

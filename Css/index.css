@@ -1,0 +1,64 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #f4f4f4;
+}
+
+.component {
+  display: block;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+input,
+select,
+button {
+  margin: 5px 0;
+  padding: 8px;
+  width: 100%;
+  max-width: 400px;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table,
+th,
+td {
+  border: 1px solid #ccc;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #f0f0f0;
+}
